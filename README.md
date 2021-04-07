@@ -7,7 +7,8 @@
 ## 使い方
 
 第1引数はパスワードの桁数。第2引数は何個のパスワードを生成するかというものです。  
-Macの場合は`pbcopy`をつけることで生成したものをクリップボードにコピーできます
+Macの場合は`pbcopy`をつけることで生成したものをクリップボードにコピーできます  
+引数をつけないと、16桁のパスワードが一つ生成されます
 
 ```bash
 $ ./passwordGenerator.sh 16 10
@@ -30,5 +31,5 @@ HZPgz4aDmHZ_gdrB
 ```
 
 ```
-./passwordGenerator.sh 16 1 | pbcopy
+./passwordGenerator.sh | pbcopy
 ```
